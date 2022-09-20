@@ -15,13 +15,17 @@
     arr4 = [0, 0, 0, 0, 0, 0]
 
     function smallest(arr) {
-        let Min = arr[0]
-        for (let i = 0; i < arr.length; i++) {
-            if (Min > arr[i]) {
-                Min = arr[i]
+        if (arr.length === 0) {
+            return "The array is empty"             //câu lệnh return để lấy giá trị trả về
+        } else {
+            let Min = arr[0]
+            for (let i = 0; i < arr.length; i++) {
+                if (Min > arr[i]) {
+                    Min = arr[i]
+                }
             }
+            return Min;
         }
-        return Min;
     }
 
     console.log(smallest(arr1));
