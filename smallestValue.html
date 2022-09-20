@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr1 = [3, 5, 1, 8, -3, 7, 8]
+
+    arr2 = [7, 12, 6, 9, 20, 56, 89]
+
+    arr3 = []
+
+    arr4 = [0, 0, 0, 0, 0, 0]
+
+    function smallest(arr) {
+        let Min = arr[0]
+        for (let i = 0; i < arr.length; i++) {
+            if (Min > arr[i]) {
+                Min = arr[i]
+            }
+        }
+        return Min;
+    }
+
+    console.log(smallest(arr1));
+    console.log(smallest(arr2));
+    console.log(smallest(arr3));
+    console.log(smallest(arr4));
+</script>
+</body>
+</html>
