@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let Question = confirm("Shall we play a game?")     //comfirm là hàm có sẵn
+
+    function process(yes) {          //Tạo hàm hiển thị kết quả sự lựa chọn
+        let result = "";
+        if (yes) result = "Excellent. We'll play a nice game of chess";
+        else result = "Maybe later then";
+        return result;
+    }
+
+    alert(process(Question))
+</script>
+</body>
+</html>

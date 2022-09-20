@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<label>Number <input type="number" id="input" oninput="test()"> is Even </label><span id="result"></span>
+<script>
+    function isEven(number) {
+        return number % 2 === 0;
+    }
+
+    function test() {
+        let input = document.getElementById("input").value
+        document.getElementById("result").innerHTML = isEven(input).toString()
+    }
+</script>
+</body>
+</html>
