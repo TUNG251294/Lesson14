@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<label>Number <input type="number" id="input" placeholder="Enter Number" oninput="display()"><span
+        id="result"></span></label>
+<script>
+    function isPrime(x) {
+        if (x < 2) {
+            let result = " is not Prime";
+            return result;
+        } else {
+            let result = " is Prime";
+            for (let i = 2; i <= Math.sqrt(x); i++) {
+                if (x % i === 0) {
+                    result = " is not Prime";
+                    break;
+                }
+            }
+            return result;
+        }
+    }
+
+    function display() {
+        let Input = document.getElementById("input").value
+        document.getElementById("result").innerHTML = isPrime(Input)
+    }
+</script>
+</body>
+</html>
