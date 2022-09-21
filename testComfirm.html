@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let Question = confirm("Do you post anything today?");
+    alert(process(Question))
+
+    function process(ok) {
+        let result = ""
+        if (ok) {
+            result = "Welcome to the page";
+            return result;
+        } else {
+            result = "Maybe later then";
+            return result;
+        }
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function exchange(Feet, Meter) {
+        let outMeter = Feet * 0.305;
+        let outFeet = 3.279 * Meter;
+        let result = Feet + " feet = " + outMeter + " meter" + "<br>" + Meter + " meter = " + outFeet + " feet";
+        return result;
+    }
+
+    let FeetIn = prompt("Enter number of feet");
+    let MeterIn = prompt("Enter number of meters");
+    document.write(exchange(FeetIn, MeterIn));
+
+</script>
+</body>
+</html>
